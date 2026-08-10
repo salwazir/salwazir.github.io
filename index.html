@@ -42,6 +42,29 @@
       margin-bottom: 40px;
     }
 
+    section + section {
+      border-top: 1px solid #ddd;
+      padding-top: 30px;
+    }
+
+    nav {
+      margin-bottom: 40px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 8px 0 0 0;
+    }
+
+    nav li {
+      margin-bottom: 4px;
+    }
+
+    nav a {
+      color: #1155aa;
+    }
+
     .video-container {
       position: relative;
       width: 100%;
@@ -74,7 +97,15 @@
     <p class="subtitle">Computing Education Coursework</p>
   </header>
 
-  <section>
+  <nav>
+    <h2>Videos</h2>
+    <ul>
+      <li><a href="#programming-explanation">Programming Explanation Video</a></li>
+      <li><a href="#repeat-programming">Repeat Programming Explanation</a></li>
+    </ul>
+  </nav>
+
+  <section id="programming-explanation">
     <h2>Programming Explanation Video</h2>
     <p>
       In this video, I explain the purpose of my Snap program and walk through how each
@@ -85,6 +116,21 @@
       <iframe
         src="https://www.youtube.com/embed/FRfoBEK4L8U"
         title="Programming Explanation Video"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section id="repeat-programming">
+    <h2>Repeat Programming Explanation</h2>
+    <p>
+      In this video, I explain how my Snap program uses a repeat block to draw a square.
+      I also explain how changing the number of repetitions would affect the program's output.
+    </p>
+    <div class="video-container">
+      <iframe
+        src="https://www.youtube.com/embed/EgFYtgC-bsY"
+        title="Repeat Programming Explanation"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
     </div>
